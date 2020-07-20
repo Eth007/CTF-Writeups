@@ -1,5 +1,13 @@
 ## Starter OSINT
 
+> Our friend isabelle has recently gotten into cybersecurity, she made a
+> point of it by rampantly tweeting about it. Maybe you can find some
+> useful information ;). While you may not need it, IsabelleBot has
+> information that applies to this challenge. Finishing the warmup OSINT
+> chal will really help with all the other osint chals The first two
+> characters of the internal of this flag are 'g0', it may not be
+> plaintext Made By: Thomas (I like OSINT)
+
 Upon reading the challenge’s description, we find out that the Isabelle bot on Discord might just give us a hint. In the Discord Server, we find that the admins have put up a nickname for the Isabelle bot: "Hacker Isabelle".
 
 [insert picture of nickname]
