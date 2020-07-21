@@ -1,6 +1,6 @@
 # OSINT Writeups
 
-## Starter OSINT
+## Starter OSINT - 20 points
 
 >Our friend isabelle has recently gotten into cybersecurity, she made a point of it by rampantly tweeting about it. Maybe you can find some useful information ;).
 >
@@ -30,7 +30,7 @@ We search all her tweets and replies and we find, in plaintext, a flag.
 
 Flag: *uiuctf{g00d_w@rmup_y3s_Ye5}*
 
-## Isabelle's Bad Opsec 1
+## Isabelle's Bad Opsec 1 - 40 points
 
 >Isabelle has some really bad opsec! She left some code up on a repo that definitely shouldn't be public. Find the naughty code and claim your prize.
 >
@@ -71,7 +71,7 @@ We decode this string, and we get the flag.
 
 Flag: *uiuctf{c0mM1t_to_your_dr3@m5!}*
 
-## Isabelle's Bad Opsec 2
+## Isabelle's Bad Opsec 2 - 40 points
 
 >Wow holy heck Isabelle's OPSEC is really bad. She was trying to make a custom youtube api but it didnt work. Can you find her channel??
 >
@@ -110,7 +110,7 @@ We unescape the characters, and we get the flag.
 
 Flag: *uiuctf{3g3nd_oF_zeld@_m0re_like_l3gend_0f_l1nk!}*
 
-## Isabelle's Bad Opsec 3
+## Isabelle's Bad Opsec 3 - 80 points
 
 >Isabelle has a youtube video somewhere, something is hidden in it.
 >
@@ -134,7 +134,7 @@ In the translation draft, we find a flag, as well as some notes from other teams
 
 Flag: *uiuctf{w3_l0Ve_@nd_va1uE_oUR_c0mMun!ty}*
 
-## Isabelle's Bad Opsec 4
+## Isabelle's Bad Opsec 4 - 100 points
 
 >Isabelle hid one more secret somewhere on her youtube channel! Can you find it!?
 >
@@ -179,7 +179,7 @@ At the bottom of the image, we find the flag.
 Flag: *uiuctf{this_flag_is_not_cake_on_the_inside}*
 
 
-## Isabelle's Bad Opsec 5
+## Isabelle's Bad Opsec 5 - 100 points
 
 > Isabelle had one more secret on her youtube account, but it was embarrassing.
 >
