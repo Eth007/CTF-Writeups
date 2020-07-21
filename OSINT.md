@@ -6,15 +6,15 @@ Upon reading the challenge’s description, we find out that the Isabelle bot on
 
 Because the challenge says that she was "rampantly tweeting about" her new interest in cybersecurity, we search Twitter for the name "Hacker Isabelle".
 
-[insert picture of search]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups2.PNG?raw=true)
 
 Sure enough, we find a twitter account named “epichackerisabelle”, or "@hackerisabelle". 
 
-[insert picture of profile]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups3.PNG?raw=true)
 
 We search all her tweets and replies and we find, in plaintext, a flag.
 
-[insert picture of post]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups4.PNG?raw=true)
 
 Flag: *uiuctf{g00d_w@rmup_y3s_Ye5}*
 
@@ -31,23 +31,23 @@ Flag: *uiuctf{g00d_w@rmup_y3s_Ye5}*
 
 Looking at the Twitter account we found in “Starter OSINT”, we can then look through the posts. One of them seems interesting:
 
-[insert picture of github reference]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups5.PNG?raw=true)
 
-We notice some phrases that Isabel says a lot, such as “0x15ABE11E” and “mimidogz,” as shown in the pictures below.
+We notice some phrases that Isabelle says a lot, such as “0x15ABE11E” and “mimidogz,” as shown in the pictures below.
 
-[insert pictures of posts]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups6.PNG?raw=true)
 
 So, we start searching on GitHub. A simple search of “0x15ABE11E” on GitHub yields the following repository:
 
-[insert picture of search page]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups7.PNG?raw=true)
 
 We open the repository "mimidogz", and we find nothing of interest, just some code to print a matrix and some weird dog esolang. 
 
-[insert picture]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups8.PNG?raw=true)
 
 However, when we look at the commit history, we find an interesting commit. We see that a base64 encoded string was committed to the file "dogz.py" and then removed, with the content "dWl1Y3Rme2MwbU0xdF90b195b3VyX2RyM0BtNSF9==". 
 
-[insert picture]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups9.PNG?raw=true)
 
 We decode this string, and we get the flag.
 
