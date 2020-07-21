@@ -2,7 +2,7 @@
 
 Upon reading the challenge’s description, we find out that the Isabelle bot on Discord might just give us a hint. In the Discord Server, we find that the admins have put up a nickname for the Isabelle bot: "Hacker Isabelle".
 
-[insert picture of nickname]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups1.PNG?raw=true)
 
 Because the challenge says that she was "rampantly tweeting about" her new interest in cybersecurity, we search Twitter for the name "Hacker Isabelle".
 
