@@ -181,14 +181,18 @@ Upon reading the challenge description, it says that Isabelle *had* (note the pa
 
 The way we can view content on the internet that was deleted is to use the Internet Archive's Wayback Machine, which contains snapshots of websites from the past. Anyone can take a snapshot, so the challenge author might have made a snapshot of the channel sometime in the past. 
 
-When we look up the "About" page on Isabelle's channel, we find that a snapshot was taken on July 14th, several days before the CTF. This is just right for the challenge, because we remember that on that date, Thomas(the challenge author) had posted about the OSINT challenges not being done at https://discordapp.com/channels/722150434566963293/722150435137388609/732729060211556482 .
+When we look up the "About" page on Isabelle's channel, we find that a snapshot was taken on July 14th, several days before the CTF. 
+
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups30.PNG?raw=true)
+
+This is just right for the challenge, because we remember that on that date, Thomas(the challenge author) had posted about the OSINT challenges not being done at https://discordapp.com/channels/722150434566963293/722150435137388609/732729060211556482 .
 
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups29.PNG?raw=true)
 
 We navigate to the snapshot, and we find that the Twitter link at the bottom has been removed, and that the website link has been edited. We go to the website link, and we find that as before, the flag has been sent as a POST request. 
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups30.PNG?raw=true)
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups31.PNG?raw=true)
 
-(Note: we were actually the third team to solve this challenge)
+(Note: we were actually the third team to solve this challenge, and we solved it *before* we solved Isabelle's Bad Opsec 1.)
 
 Flag: *uiuctf{Th1s_1s_d3f1n1te1y_th3_r34l_f13g}*
