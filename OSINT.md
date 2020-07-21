@@ -81,7 +81,7 @@ Flag: *uiuctf{c0mM1t_to_your_dr3@m5!}*
 >
 >Made By: Thomas
 
-In this challenge’s description, it tells us that Hacker Isabelle has made a really horrible youtube api. On her github, we see that there is a repository called “api-stuff”:
+In this challenge’s description, it tells us that Hacker Isabelle has made a really horrible YouTube api. On her github, we see that there is a repository called “api-stuff”:
 
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups16.PNG?raw=true)
 
@@ -189,7 +189,7 @@ Flag: *uiuctf{this_flag_is_not_cake_on_the_inside}*
 >
 >**The flag capitalization may be different, please be aware**
 
-Upon reading the challenge description, it says that Isabelle *had* (note the past tense) one more secret on her youtube account. Also, the description says that the secret was "embarrasing." This all hints at the flag being deleted. 
+Upon reading the challenge description, it says that Isabelle *had* (note the past tense) one more secret on her YouTube account. Also, the description says that the secret was "embarrasing." This all hints at the flag being deleted. 
 
 The way we can view content on the internet that was deleted is to use the Internet Archive's Wayback Machine, which contains snapshots of websites from the past. Anyone can take a snapshot, so the challenge author might have made a snapshot of the channel sometime in the past. 
 
