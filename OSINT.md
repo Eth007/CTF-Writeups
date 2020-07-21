@@ -65,11 +65,11 @@ Flag: *uiuctf{c0mM1t_to_your_dr3@m5!}*
 
 In this challenge’s description, it tells us that Hacker Isabelle has made a really horrible youtube api. On her github, we see that there is a repository called “api-stuff”:
 
-[insert picture]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups10.PNG?raw=true)
 
 Once again, we look in the commit history. We see two interesting commits: “quickstart.go” and “quickstart.stop”. In the quickstart.stop commit, we see that there is a line of code with the following text:
 
-[insert picture of text]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups11.PNG?raw=true)
 
 We can recognize this as a YouTube channel ID, which is at the end of the URL of every Youtube channel. In other words, every YouTube channel’s URL is in the following form:
 
@@ -78,11 +78,11 @@ We can recognize this as a YouTube channel ID, which is at the end of the URL of
  
 Now that we have the channel ID, we navigate to [https://www.youtube.com/channel/UCnL8vVmpKY8ZmfSwoikavHQ](https://www.youtube.com/channel/UCnL8vVmpKY8ZmfSwoikavHQ), and we find that we have a YouTube channel with the name “EliteHackerIsabelle1337”. We can also see that the profile picture is the same as the one from the GitHub account and the Discord bot, so we know we are on the right track:
 
-[insert picture]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups12.PNG?raw=true)
 
 We go to the “About” section on the channel, and we find that there are two links at the bottom of the page: one leading to Isabelle’s Twitter account and one leading to her website:
 
-[insert picture]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups13.PNG?raw=true)
 
 Because we have already been to her twitter, we click the link to her website. It leads us to the UIUCTF homepage, but in the URL we can see that the flag is being sent as a POST request:
 
@@ -104,16 +104,15 @@ Flag: *uiuctf{3g3nd_oF_zeld@_m0re_like_l3gend_0f_l1nk!}*
 
 We go to Isabelle's YouTube channel, and we find that she has one video, titled "[TUTORIAL 4.1.2519] how to involke mimidogz and pwn Arch Linux (GONE WRONG, MOM WAS ANGRY!!)":
 
-[insert image]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups14.PNG?raw=true)
 
 Thinking about what kind of data could be hidden in a video, we decide to start with the captions. However, when we look at the video with captions enabled, nothing shows up. So, we go to the "Add translations" function that YouTube provides. 
 
-[insert image of menu]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups15.PNG?raw=true)
 
 In the translation draft, we find a flag, as well as some notes from other teams.
 
-
-[image]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups16.PNG?raw=true)
 
 Flag: *uiuctf{w3_l0Ve_@nd_va1uE_oUR_c0mMun!ty}*
 
