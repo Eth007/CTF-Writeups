@@ -1,5 +1,15 @@
 ## Starter OSINT
 
+>Our friend isabelle has recently gotten into cybersecurity, she made a point of it by rampantly tweeting about it. Maybe you can find some useful information ;).
+>
+>While you may not need it, IsabelleBot has information that applies to this challenge.
+>
+>Finishing the warmup OSINT chal will really help with all the other osint chals
+>
+>The first two characters of the internal of this flag are 'g0', it may not be plaintext
+>
+>Made By: Thomas (I like OSINT)
+
 Upon reading the challenge’s description, we find out that the Isabelle bot on Discord might just give us a hint. In the Discord Server, we find that the admins have put up a nickname for the Isabelle bot: "Hacker Isabelle".
 
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups1.PNG?raw=true)
@@ -127,7 +137,7 @@ Flag: *uiuctf{w3_l0Ve_@nd_va1uE_oUR_c0mMun!ty}*
 >Isabelle hid one more secret somewhere on her youtube channel! Can you find it!?
 >
 >**Finishing previous OSINT Chals will assist you with this challenge**
-
+>
 >The first two characters of the internal of this flag are 'th', it may not be plaintext_
 >
 >_Additionally, the flag format may not be standard capitalization. Please be aware_
@@ -189,10 +199,14 @@ This is just right for the challenge, because we remember that on that date, Tho
 
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups29.PNG?raw=true)
 
-We navigate to the snapshot, and we find that the Twitter link at the bottom has been removed, and that the website link has been edited. We go to the website link, and we find that as before, the flag has been sent as a POST request. 
+We navigate to the snapshot, and we find that the Twitter link at the bottom has been removed, and that the website link has been edited. 
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups31.PNG?raw=true)
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups32.PNG?raw=true)
+
+We go to the website link, and we find that as before, the flag has been sent as a POST request. 
+
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups33.PNG?raw=true)
 
 (Note: we were actually the third team to solve this challenge, and we solved it *before* we solved Isabelle's Bad Opsec 1.)
 
-Flag: *uiuctf{Th1s_1s_d3f1n1te1y_th3_r34l_f13g}*
+Flag: *UIUCTF{hidd3n_buT_neVeR_g0n3}*
