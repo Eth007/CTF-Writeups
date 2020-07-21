@@ -118,7 +118,7 @@ Thinking about what kind of data could be hidden in a video, we decide to start 
 
 In the translation draft, we find a flag, as well as some notes from other teams.
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups23.PNG?raw=true)
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups22b.PNG?raw=true)
 
 Flag: *uiuctf{w3_l0Ve_@nd_va1uE_oUR_c0mMun!ty}*
 
@@ -138,19 +138,19 @@ First, we note that the author of this challenge has left a note, saying that th
 
 So, we go to SIGPwny's website at https://sigpwny.github.io/, and we find a link to their "Fall HACKathon" that they hosted last year. 
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups24.PNG?raw=true)
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups23.PNG?raw=true)
 
 At the page, we find the schedule of the event. As it turns out, each item on the schedule had a link to the slideshow used in that section.
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups25.PNG?raw=true)
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups24.PNG?raw=true)
 
 We click on the "Recon" link, because it is another word for OSINT.  Opening the slideshow, we find that we are in luck! The presentation was done by Thomas, who made this challenge! 
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups26.PNG?raw=true)
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups25.PNG?raw=true)
 
 On the last slide, we find tips for YouTube OSINT. 
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups27.PNG?raw=true)
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups26.PNG?raw=true)
 
 Near the middle of the slide, one of the tips reads:
 
@@ -160,7 +160,7 @@ This trick seems realistic enough, because you could use an uncropped YouTube ba
 
 In the "Branding Settings" tab, we find that YouTube has various links for the channel banner. On the bottom one, titled "bannerTvHighImageUrl", we find the uncropped image.
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups28.PNG?raw=true)
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups27.PNG?raw=true)
 
 At the bottom of the image, we find the flag.
 
@@ -183,7 +183,7 @@ The way we can view content on the internet that was deleted is to use the Inter
 
 When we look up the "About" page on Isabelle's channel, we find that a snapshot was taken on July 14th, several days before the CTF. This is just right for the challenge, because we remember that on that date, Thomas(the challenge author) had posted about the OSINT challenges not being done at https://discordapp.com/channels/722150434566963293/722150435137388609/732729060211556482 .
 
-[insert picture here]
+![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups28.PNG?raw=true)
 
 We navigate to the snapshot, and we find that the Twitter link at the bottom has been removed, and that the website link has been edited. We go to the website link, and we find that as before, the flag has been sent as a POST request. 
 
