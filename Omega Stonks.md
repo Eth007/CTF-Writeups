@@ -18,7 +18,7 @@ After the CTF ended, it was revealed that this happened because of unsanitized i
 
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/omega_stonks/writeup2.PNG?raw=true)
 
-The bug in the bot apparently also brought up discussion among the admins, leading to the prize for most bells being removed. Several DMs asking for bells also were sent to FIREPONY57#0483. Of course, he refused all of them, after Pranav, the bot’s creator, told him to not transfer any more bells to others ;). 
+The bug in the bot apparently also brought up discussion among the admins, leading to the prize for most bells being removed. Several DMs asking for bells also were sent to FIREPONY57#0483. Of course, he refused all of them, after Pranav, the bot’s creator, told him to not transfer any more bells to others. ;) 
 
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/omega_stonks/writeup3.PNG?raw=true)
 
