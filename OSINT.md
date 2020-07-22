@@ -47,8 +47,6 @@ Looking at the Twitter account we found in “Starter OSINT”, we can then look
 
 We notice some phrases that Isabelle says a lot, such as “0x15ABE11E” and “mimidogz,” as shown in the pictures below.
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups6.PNG?raw=true)
-
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups7.PNG?raw=true)
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups8.PNG?raw=true)
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups9.PNG?raw=true)
