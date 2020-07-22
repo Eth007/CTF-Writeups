@@ -16,10 +16,10 @@ The password that was on the page read  “d8f1328d”, and it’s made up of en
 
 Next, we try using a Vigenere cipher. We guess that the key would be “pwnyOS”, so with our supreme guessing skills we decode the cipher. I wrote this python script to decode for us:
 
-   flag = “”
-   for c in range(len("d8f1328d")):
-	flag += chr(ord("d8f1328d"[c]) + ord("pwnyOSpwnyOS"[c % 6]))
-   print(flag)
+    flag = “”
+    for c in range(len("d8f1328d")):
+	 flag += chr(ord("d8f1328d"[c]) + ord("pwnyOSpwnyOS"[c % 6]))
+    print(flag)
 
 However, despite our efforts, we get some jumbled mess resembling “Ô¯Ôª¨Û”.
 
@@ -27,9 +27,7 @@ Well, that’s not it either.
 
 We continue to scan the page and we find a button that says Go Back. We try to click on it, but it does nothing. Then we use the clever trick of opening the link in a new tab, but we come upon a blank page. 
 
-We then suspect that there is some sort of flag hidden in the website.
-
-![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups32.PNG)
+We suspect that there is some sort of flag hidden in this blank page.
 
 We open up the inspect element menu, but still, to our disappointment, we find nothing. 
 
@@ -64,8 +62,10 @@ Given this advice, we start reading the doc from top to bottom VERY carefully. A
 
 We try wrapping it with uiuctf{} and entering the flag in, but it says we are incorrect. We try wrapping it with UIUCTF{} as we have seen in some other challenges, but we are still incorrect.
 
-Again we have that feeling that the *zero points* are actually *nothing*. Then we see something before the hint. There's an "uiuctf" before it! We take the "uiuctf" part along with the hint and we submit it. CTFd says our flag is correct and we see the team [sqrt(-1) + 1] gain a whopping *0 points*, rising from 31st place to the outstanding rank of *31st place*!
+Again we have that feeling that the *zero points* are actually *nothing*. Then we see something before the hint. There's an "uiuctf" before it! 
 
 ![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups39.PNG)
+
+We take the "uiuctf" part along with the hint and we submit it. CTFd says our flag is correct and we see the team [sqrt(-1) + 1] gain a whopping *0 points*, rising from 31st place to the outstanding rank of *31st place*!
 
 Flag: *uiuctf{read_the_docs_carefully!}*
