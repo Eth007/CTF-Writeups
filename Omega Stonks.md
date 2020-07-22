@@ -4,9 +4,13 @@
 >
 >(Buy this flag from IsabelleBot)
 
-The solution we had for this challenge was VERY unintended. 
+The flag was in the “store” in the #isabelle channel, and it cost 500,000 bells. The way to get bells was to work by using the command “!work”. Every time you ran the command “!work”, the bot awarded you an amount of money from 100 to 500 bells.
 
-In this challenge it tells us that the flag for this challenge can be bought from the Isabelle bot. 
+However, slowmode was enabled on the only channel we could “!work” in, meaning that we could only run the command every 10 seconds(this was increased to 15 minutes later in the CTF). 
+
+This meant that the *intended* solution to this challenge was by using the “!bet” command. You could earn way higher amounts of bells by betting on what challenge would be solved next (betting was broken throughout most of the ctf, though). 
+
+The solution we had for this challenge was VERY unintended. 
 
 During the CTF, *someone* along the line decided that it would be a good idea to transfer negative money from to other people, to try to “steal” their bells. Most likely, the post got deleted, but the result was that FIREPONY57#0483 gained the ability to wield an infinite number of bells. 
 
@@ -23,5 +27,7 @@ From then on, FIREPONY57#0483’s balance kept on growing, and after some experi
 After transferring many bells to his teammate Eth007#0804, Eth007 could buy the flag, which was sent in a direct message. 
 
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/omega_stonks/writeup1.PNG?raw=true)
+
+(Note: We got third blood on this challenge, because we were beat by two teams who presumably used bets or alternate Discord accounts to get more bells(namely, /[spin]*s/).)
 
 Flag: *uiuctf{so_much_money_so_much_time_enjoy_50_points_XD}*
