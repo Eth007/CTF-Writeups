@@ -1,4 +1,4 @@
-## Omega Stonks
+## Omega Stonks - 50 points - 25 solves
 
 >If you solve this challenge, straightup you have Omega Stonks.
 >
