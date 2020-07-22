@@ -62,8 +62,10 @@ Given this advice, we start reading the doc from top to bottom VERY carefully. A
 
 We try wrapping it with uiuctf{} and entering the flag in, but it says we are incorrect. We try wrapping it with UIUCTF{} as we have seen in some other challenges, but we are still incorrect.
 
-Again we have that feeling that the *zero points* are actually *nothing*. Then we see something before the hint. There's an "uiuctf" before it! We take the "uiuctf" part along with the hint and we submit it. CTFd says our flag is correct and we see the team [sqrt(-1) + 1] gain a whopping *0 points*, rising from 31st place to the outstanding rank of *31st place*!
+Again we have that feeling that the *zero points* are actually *nothing*. Then we see something before the hint. There's an "uiuctf" before it! 
 
 ![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups39.PNG)
+
+We take the "uiuctf" part along with the hint and we submit it. CTFd says our flag is correct and we see the team [sqrt(-1) + 1] gain a whopping *0 points*, rising from 31st place to the outstanding rank of *31st place*!
 
 Flag: *uiuctf{read_the_docs_carefully!}*
