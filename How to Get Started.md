@@ -27,24 +27,28 @@ Well, that’s not it either.
 
 We continue to scan the page and we find a button that says Go Back. We try to click on it, but it does nothing. Then we use the clever trick of opening the link in a new tab, but we come upon a blank page. 
 
-We then suspect that there is some sort of flag hidden in the website. We open up the inspect element menu, but still, to our disappointment, we find nothing. 
+We then suspect that there is some sort of flag hidden in the website.
 
 ![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups32.PNG)
 
-We then realize that there is still another website we forgot to check! We quickly go onto the other link and it leads us to a github page.
-
+We open up the inspect element menu, but still, to our disappointment, we find nothing. 
 
 ![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups33.PNG)
 
-We see a file called Getting_Started.pdf. Since this is the name of the challenge is “How to Get Started”, we click on the link, but again, we find nothing of use. Just some weird documentation. HOW IS THIS HAPPENING THAT EVERY PROMISING LINK LEADS US ON A WILD GOOSE CHASE!?! 
+We then realize that there is still another website we forgot to check! We quickly go onto the other link and it leads us to a github page.
 
 ![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups34.PNG)
+
+
+We see a file called Getting_Started.pdf. Since this is the name of the challenge is “How to Get Started”, we click on the link, but again, we find nothing of use. Just some weird documentation. HOW IS THIS HAPPENING THAT EVERY PROMISING LINK LEADS US ON A WILD GOOSE CHASE!?! 
+
+![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups35.PNG)
 
 So we go back to the original link to look for the flag, but before we can start searching, the words “go back” remind me of something… The INTERNET ARCHIVE’S WAYBACK MACHINE!!! That had to be it! I could already see our score rising by ZERO points and beating DiceGang.
 
 We go onto the Wayback machine internet archive and we put the URL in the search bar and we find… nothing.
 
-![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups35.PNG)
+![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups36.PNG)
 
 The challenge starts to feel like a very, *very* cruel joke meant to distract us from the real problems and make us waste our time. The *zero points* which seemed so glorious earlier seem like nothing. 
 
@@ -53,11 +57,11 @@ There, in brackets, we see a hint for the flag! It says
 
 “{read_the_docs_carefully!}!”
 
-![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups36.PNG)
+![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups37.PNG)
 
 Given this advice, we start reading the doc from top to bottom VERY carefully. All we find is a bunch of stuff about pwnyOS. Then we realize that TWO things are highlighted in gray highlights. One of them was the hint we found, the other one says “kernel.chal.uiuc.tf:PORT”
 
-![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups37.PNG)
+![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups38.PNG)
 
 We try wrapping it with uiuctf{} and entering the flag in, but it says we are incorrect. We try wrapping it with UIUCTF{} as we have seen in some other challenges, but we are still incorrect.
 Again we have that feeling that the *zero points* are actually *nothing*. Then we see something before the hint. There's a uiuctf before it! We take the uiuctf part along with the hint and we submit it. The ctf says our flag is correct and we see that the team [sqrt(-1) + 1] gain a whopping *0 points* to rise from 31st place to the outstanding rank of *31st place*!
