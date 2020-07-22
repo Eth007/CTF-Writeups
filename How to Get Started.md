@@ -16,10 +16,10 @@ The password that was on the page read  “d8f1328d”, and it’s made up of en
 
 Next, we try using a Vigenere cipher. We guess that the key would be “pwnyOS”, so with our supreme guessing skills we decode the cipher. I wrote this python script to decode for us:
 
-   flag = “”
-   for c in range(len("d8f1328d")):
-	flag += chr(ord("d8f1328d"[c]) + ord("pwnyOSpwnyOS"[c % 6]))
-   print(flag)
+    flag = “”
+    for c in range(len("d8f1328d")):
+	 flag += chr(ord("d8f1328d"[c]) + ord("pwnyOSpwnyOS"[c % 6]))
+    print(flag)
 
 However, despite our efforts, we get some jumbled mess resembling “Ô¯Ôª¨Û”.
 
