@@ -4,7 +4,7 @@
 >
 >To get your credentials to access pwnyOS, please visit: https://uiuc.tf/pwnyos
 >
->More information about pwnyOS, and how to connect to a VNC server can be found here: >https://github.com/sigpwny/pwnyOS-2020-docs
+>More information about pwnyOS, and how to connect to a VNC server can be found here: https://github.com/sigpwny/pwnyOS-2020-docs
 
 We see that this challenge tells us to “get started”. (whatever *that* means...)  Most teams disregard it as a challenge not worth doing because it's so hard with its extremely high point value of zero, and it’s low solve percentage, with only 64 solves... Anyway, in this challenge, they give us two links. We click on the first one and it leads us to this site:
 
