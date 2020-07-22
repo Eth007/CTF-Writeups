@@ -4,7 +4,7 @@
 
 >pwnyOS is a custom x86 operating system that supports link-time kASLR, multitasking and kernel threads, execution of genuine ELF files, a realtime high resolution graphics engine, and a custom hierarchical file system. This OS was written from the ground up with its use as a challenge for UIUCTF 2020 in mind. All source code in the OS is 100% custom handwritten C and assembly- there are no libraries used, and none of its code can be found anywhere online. This competition simulates an unprivileged user with physical access to a keyboard and terminal attempting to gain local privilege escalation on an unfamiliar system.
 >
->Documentation: >https://github.com/sigpwny/pwnyOS-2020-docs/blob/master/Getting_Started.pdf
+>Documentation: https://github.com/sigpwny/pwnyOS-2020-docs/blob/master/Getting_Started.pdf
 >
 >System Calls: https://github.com/sigpwny/pwnyOS-2020-docs/blob/master/Syscalls.pdf
 >
