@@ -27,9 +27,7 @@ Well, that’s not it either.
 
 We continue to scan the page and we find a button that says Go Back. We try to click on it, but it does nothing. Then we use the clever trick of opening the link in a new tab, but we come upon a blank page. 
 
-We then suspect that there is some sort of flag hidden in the website.
-
-![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/how_to_get_started/writeups32.PNG)
+We suspect that there is some sort of flag hidden in this blank page.
 
 We open up the inspect element menu, but still, to our disappointment, we find nothing. 
 
