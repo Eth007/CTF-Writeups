@@ -16,4 +16,4 @@ We look through the files that Autopsy found, and we find a picture with the fla
 
 ![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/raymonds_recovery/3.PNG)
 
-Flag: *uiuctf{everyone_loves_raymond}*
+Flag: *uiuctf{everyb0dy_l0ves_raym0nd}*
