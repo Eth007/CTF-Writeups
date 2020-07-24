@@ -3,7 +3,7 @@
 >Please fill out the feedback survey here! https://forms.gle/qfWGeN6jFf5kRcZW8
 
 We see that this challenge tells us to fill out the survey. We go on ahead and click the link. 
-.
+
 ![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/feedback_survey/survey.PNG)
 
 We are familiar with CTFs asking us to fill out a survey to improve their CTF for the next year. We see some questions and start filling them up when then we get to the last 2 questions. 
