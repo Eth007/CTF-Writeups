@@ -1,6 +1,6 @@
 ## K.K's Mixtape - 20 points - 191 solves
 
-When we open the audio and listen to it, we automatically go to the spectrogram generator at https://convert.ing-now.com/audio-spectrogram-creator/ . We put the file in and press the “go” button. The output is this picture:
+When we open the audio and listen to it, it sounds like gibberish. So, we go to the spectrogram generator at https://convert.ing-now.com/audio-spectrogram-creator/ . We put the file in and press the “go” button. The output is this picture:
 
 ![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/K_K_s_Mixtape/writeup1.PNG)
 
