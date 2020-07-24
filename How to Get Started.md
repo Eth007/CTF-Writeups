@@ -50,7 +50,7 @@ We go onto the Wayback machine internet archive and we put the URL in the search
 
 The challenge starts to feel like a very, *very* cruel joke meant to distract us from the real problems and make us waste our time. The *zero points* which seemed so glorious earlier seem like nothing. 
 
-Trying to find something to take out our anger on, we find this grey sliding bar on the corner of the github. We start sliding it around watching it go up and down. Then when the gray sliding thing reaches the bottom, we see something pretty suspicious. 
+Trying to find something to take out our anger on, we find this grey sliding bar on the corner of the GitHub. We start sliding it around watching it go up and down. Then when the gray sliding thing reaches the bottom, we see something pretty suspicious. 
 
 There, in brackets, we see a hint for the flag! It says “{read_the_docs_carefully!}!”
 
