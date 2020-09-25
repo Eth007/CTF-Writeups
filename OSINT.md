@@ -101,7 +101,7 @@ We go to the “About” section on the channel, and we find that there are two 
 
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups19.PNG?raw=true)
 
-Because we have already been to her twitter, we click the link to her website. It leads us to the UIUCTF homepage, but in the URL we can see that the flag is being sent as a POST request:
+Because we have already been to her twitter, we click the link to her website. It leads us to the UIUCTF homepage, but in the URL we can see that the flag is being sent as a GET request:
 
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups20.PNG?raw=true)
 
