@@ -204,7 +204,7 @@ We navigate to the snapshot, and we find that the Twitter link at the bottom has
 
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups32.PNG?raw=true)
 
-We go to the website link, and we find that as before, the flag has been sent as a POST request. 
+We go to the website link, and we find that as before, the flag has been sent as a GET request. 
 
 ![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/writeups33.PNG?raw=true)
 
