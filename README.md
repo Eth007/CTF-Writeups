@@ -1,3 +1,3 @@
-# uiuctf-writeups
+# CTF Writeups
 
-These are the team [sqrt(-1) + 1]'s  writeups for UIUCTF 2020, which was at https://uiuc.tf .
+These are my writeups for various CTF competitions that I have participated in. I play CTFs with `[sqrt(-1) + 1]` (CTFtime at [https://ctftime.org/team/131529])
