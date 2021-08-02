@@ -17,14 +17,14 @@ This hints at how the real flag had been in the location that the fake flag is n
 
 Loading up the capture in Wireshark, we notice that Minetest is using UDP packets to send data between clients and the server. However, this is not being done in any human-readable way, so we need some way to translate this into something we can understand.
 
-!(Raw capture)[capture_raw.png]
+![Raw capture](capture_raw.png)
 
 How can we do this? We could read the Minetest source code (It's open source at https://github.com/minetest/minetest), but it would be cool if that work was done for us. Thankfully, inside the Minetest source repository on github we can find a Wireshark plugin that will parse Minetest network traffic at https://github.com/minetest/minetest/blob/master/util/wireshark/minetest.lua. Cool!
 
 Now, we just need to install the plugin to our Wireshark install, and voila! Our network traffic is parsed for us!
 
-!(Parsed capture)[capture_parsed.png]
+![Parsed capture](capture_parsed.png)
 
 We notice that some packets are labeled as `TOSERVER_INTERACT`. These are the packets that we will be focused on. The packets contain information about what action was done, as well as where the action was done (as XYZ in-game coordinates). For those unfamiliar with how coordinates in Minecraft and Minetest work, the X and Z coordinates represent movement parallel to the ground while the Y coordinate represents up/down movement.
 
-!(Coordinates)[coords.png]
+![Coordinates](coords.png)
