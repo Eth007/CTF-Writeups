@@ -71,7 +71,10 @@ lines = [l.strip() for l in open("coordinates.txt").readlines()][::-1] # To get 
 coords = []
 
 for n in range(len(lines)//3):
+	# get coordinates into a list of 3 elements, which is appended to `coords`
 	coords.append([int(lines.pop().replace("X: ", "")), int(lines.pop().replace("Y: ", "")), int(lines.pop().replace("Z: ", ""))])
+
+# coords = [[-402, 15, -190], [-402, 14, -190], [-402, 15, -189], [-402, 15, -188], [-402, 13, -190], ... ]
 ```
 
 At first, I plotted the coordinates in 3D, because I had all three dimensions. However, I found that this was unneccesary because all the blocks of the flag are arranged in a plane perpendicular to the ground, as the fake flag is. So, I used matplotlib to plot the flag in 2D, allowing for some margin of error in case the flag was shifted when the fake one was created.
