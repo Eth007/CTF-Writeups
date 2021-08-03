@@ -31,7 +31,7 @@ From then on, FIREPONY57#0483’s balance kept on growing, and after some experi
 
 After transferring many bells to his teammate Eth007#0804, Eth007 could buy the flag, which was sent in a direct message. 
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/omega_stonks/writeup1.PNG)
+![](Images/omega_stonks/writeup1.PNG)
 
 (Note: We got third blood on this challenge, because we were beat by two teams who presumably used bets or alternate Discord accounts to get more bells(namely, /[spin]*s/).)
 

@@ -12,7 +12,7 @@
 
 We are stuck in a loop of a program called “binexec”. We just need to type in some hex-encoded shellcode.
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/time_to_start/kernel3.PNG)
+![](Images/time_to_start/kernel3.PNG)
 
 One problem. I don’t know anything about shellcode.
 
@@ -20,7 +20,7 @@ So, we need to find a better solution than writing and compiling some code from 
 
 In the binexec section of the docs, we see that they have provided an example shellcode script, that calls syscall 6, SYS_ALERT. 
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/time_to_start/kernel4.PNG)
+![](Images/time_to_start/kernel4.PNG)
 
 So, we look at the hex that was generated from this assembly code, copied from the screenshot that was provided:
 
@@ -32,10 +32,10 @@ We notice that in the hex, we see that there is a section that reads “06”(bo
 
 We can now use our AutoHotKey script that we made for the challenge “Showcase” in order to send our code into the VM.
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/time_to_start/kernel5.PNG)
+![](Images/time_to_start/kernel5.PNG)
 
 Now, we type “done” and press enter. We get greeted with a screen with a flag and instructions for the next step. (Which we unfortunately couldn’t solve. Well, so much for solving the challenge with no knowledge of shellcode.)
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/time_to_start/kernel6.PNG)
+![](Images/time_to_start/kernel6.PNG)
 
 Flag: *uiuctf{5ysc4ll_g4ng_sysc4ll_g4ng}*

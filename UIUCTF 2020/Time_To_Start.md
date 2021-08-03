@@ -22,11 +22,11 @@
 
 Upon entering the credentials for the VNC server, we are greeted with a login page. 
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/time_to_start/kernel1.PNG)
+![](Images/time_to_start/kernel1.PNG)
 
 The challenge tells us that the username is sandb0x. Also, the challenge states that the password is four lowercase characters long, and that it starts with “p”. So, we start guessing. Our first guess is “pass”, one of the most common passwords. However, this doesn’t work. Then, considering that the name of the operating system is pwnyOS, we try the password “pwny”. It works!
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/time_to_start/kernel2.PNG)
+![](Images/time_to_start/kernel2.PNG)
 
 Flag: *uiuctf{timing_s1d3_chann3l_g4ng}*
 
