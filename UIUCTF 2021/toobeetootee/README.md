@@ -93,6 +93,8 @@ With that, we can plot the coordinates on our grid and view where the blocks wer
 
 ![Flag](flag.png)
 
-
+Although some blocks are missing, we can see that the text is some variant of `BudG3t_c4ves_N_cl1ffs`. The rest of the flag is the flag format (`uiuctf{` and `}`), which was not destroyed but are still in the world as part of the fake flag. So, our flag is some variation of `uiuctf{BudG3t_c4ves_N_cl1ffs}`. After some trial and error on CTFd, we find that the correct flag is `uiuctf{BudG3t_c4ves_N_cl1fFs}`.
 
 Flag: `uiuctf{BudG3t_c4ves_N_cl1fFs}`
+
+Note: I talked to the challenge author, WhiteHoodHacker, who told me that the reason I was having ambiguities with the final flag was because some parts of the flag were not destroyed, but were actually used as part of the fake flag.
