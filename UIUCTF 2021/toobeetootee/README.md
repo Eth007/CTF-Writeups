@@ -84,7 +84,7 @@ fig = plt.figure()
 ax = plt.axes()
 
 for n in coords:
-	if n[0] < -350 and n[0] > -380: # near the X coordinates of the flag
+	if n[0] < -350 and n[0] > -380: # near the X coordinates of the fake flag, the real flag was in the same place
 		# plot the Y and Z coordinates, because the flag is built top to bottom. 
 		# Also flip the Z-coordinates because of which way the flag is facing 
 		# (so the flag won't be reversed on our plot)
