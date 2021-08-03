@@ -6,14 +6,14 @@
 
 We open the file in Autopsy:
 
-![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/raymonds_recovery/1.PNG)
+![](Images/raymonds_recovery/1.PNG)
 
 There seems to be nothing but corrupted JPEG files and pictures of hats. But then, we see the $CarvedFiles section:
 
-![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/raymonds_recovery/2.PNG)
+![](Images/raymonds_recovery/2.PNG)
 
 We look through the files that Autopsy found, and we find a picture with the flag in it:
 
-![](https://raw.githubusercontent.com/matdaneth/uiuctf-writeups/master/Images/raymonds_recovery/3.PNG)
+![](Images/raymonds_recovery/3.PNG)
 
 Flag: *uiuctf{everyb0dy_l0ves_raym0nd}*
