@@ -76,13 +76,16 @@ for n in range(len(lines)//3):
 
 At first, I plotted the coordinates in 3D, because I had all three dimensions. However, I found that this was unneccesary because all the blocks of the flag are arranged in a plane perpendicular to the ground, as the fake flag is. So, I used matplotlib to plot the flag in 2D, allowing for some margin of error in case the flag was shifted when the fake one was created.
 
-```
+```python
 fig = plt.figure()
 ax = plt.axes()
 
 for n in coords:
 	if n[0] < -350 and n[0] > -380: # near the X coordinates of the flag
-		plt.plot(-n[2], n[1], 'ro', markersize=2) # plot the Y and Z coordinates, because the flag is built top to bottom. Also flip the Z-coordinates because of which way the flag is facing (so the flag won't be reversed on our plot)
+		# plot the Y and Z coordinates, because the flag is built top to bottom. 
+		# Also flip the Z-coordinates because of which way the flag is facing 
+		# (so the flag won't be reversed on our plot)
+		plt.plot(-n[2], n[1], 'ro', markersize=2) 
 
 ax.set_aspect("equal", "box") # Get pyplot to give us equal X and Y scales, because that's how they appear in-game
 
@@ -97,4 +100,6 @@ Although some blocks are missing, we can see that the text is some variant of `B
 
 Flag: `uiuctf{BudG3t_c4ves_N_cl1fFs}`
 
-Note: I talked to the challenge author, WhiteHoodHacker, who told me that the reason I was having ambiguities with the final flag was because some parts of the flag were not destroyed, but were actually used as part of the fake flag.
+Thanks WhiteHoodHacker and SIGPwny for an amazing challenge!
+
+Note: I talked to the challenge author, WhiteHoodHacker, who told me that the reason I was having ambiguities with the final flag was because some parts of the flag were not destroyed, but were actually used as part of the fake flag. The intended solution was to write a minetest mod to reverse the steps recorded in a packet capture, so that the flag could be viewed in the Minetest world.
