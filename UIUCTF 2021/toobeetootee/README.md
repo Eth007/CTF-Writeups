@@ -108,4 +108,4 @@ Flag: `uiuctf{BudG3t_c4ves_N_cl1fFs}`
 
 Thanks WhiteHoodHacker and SIGPwny for an amazing challenge!
 
-Note: I talked to the challenge author, WhiteHoodHacker, who told me that the reason I was having ambiguities with the final flag was because some parts of the flag were not destroyed, but were actually used as part of the fake flag. The intended solution was to write a minetest mod to reverse the steps recorded in a packet capture, so that the flag could be viewed in the Minetest world.
+Note: I talked to the challenge author, WhiteHoodHacker, who told me that the reason I was having ambiguities with the final flag was because some parts of the flag were not destroyed, but were actually used as part of the fake flag. The intended solution was to write a minetest mod to reverse the steps recorded in a packet capture, so that the flag could be viewed in the Minetest world. (But that's hard -_-)
