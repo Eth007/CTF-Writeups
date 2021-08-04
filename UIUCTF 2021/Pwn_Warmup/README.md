@@ -7,8 +7,6 @@
 
 `Pwn Warmup` was a pwn (binary exploitation) challenge in UIUCTF 2021, where I played with `TeamlessCTF`, placing 12th place overall. Although my team solved this challenge before I got a chance to during the CTF, I wanted to make a writeup for it anyways.
 
-> tl;dr Overwrite the return address with the address of `give_flag`, which is leaked at the beginning of the program
-
 We first decompile the `main` function in Ghidra (Ghidra is a C decompiler developed by the NSA, and can be found at https://ghidra-sre.org/):
 
 ```C
@@ -62,7 +60,7 @@ OK. So the program is using an insecure function. Why is `gets()` insecure? Acco
 `buf` is the area we write to, and the saved ebp and saved eip are the places where the program has saved registers for when the program returns to the function from which it was called. If we overwrite it with an address, we can control where the program jumps to after the `vulnerable()` function is done. Luckily for us, the program has provided us with a `give_flag` function that prints out the flag. So our goal is to overwrite the saved eip with the address of give_flag.
 
 **Sidenote: What are ebp and eip and why are they saved on the stack (memory) right now?**
-The CPU of a computer has multiple registers, each able to hold a value. In a 32-bit program, the registers each hold 4 bytes (32 bits... see the connection between 32 bit programs and 32 bit registers). The ebp register stores the base address of the stack while the eip register stores the address of the current instruction the program is executing. When a program calls a function, it must store where to return to after the function is called. So, when a function is called ebp and eip are stored on the stack, and are returned to the registers when `ret` is called. So, if we overwrite the saved eip, we can hijack the control flow of the program because we are changing where the program jumps to after the function is finished.
+The CPU of a computer has multiple registers, each able to hold a value. In a 32-bit program, the registers each hold 4 bytes (32 bits). The ebp register stores the base address of the stack while the eip register stores the address of the current instruction the program is executing. When a program calls a function, it must store where to return to after the function is called. So, when a function is called ebp and eip are stored on the stack, and are returned to the registers when `ret` is called. So, if we overwrite the saved eip, we can hijack the control flow of the program because we are changing where the program jumps to after the function is finished.
 
 How do we do this? Let's examine memory again.
 
