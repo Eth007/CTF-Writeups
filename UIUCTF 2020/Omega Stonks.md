@@ -16,16 +16,16 @@ During the CTF, *someone* along the line decided that it would be a good idea to
 
 After the CTF ended, it was revealed that this happened because of unsanitized input, and it ended up turning FIREPONY57#0483’s balance into some sort of string, effectively throwing a wrench into the system. In the end, his balance looked like this:
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/omega_stonks/writeup2.PNG?raw=true)
+![](Images/omega_stonks/writeup2.PNG)
 
 The bug in the bot apparently also brought up discussion among the admins, leading to the prize for most bells being removed. Several DMs asking for bells also were sent to FIREPONY57#0483. Of course, he refused all of them, after Pranav, the bot’s creator, told him to not transfer any more bells to others. ;) 
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/omega_stonks/writeup3.PNG?raw=true)
+![](Images/omega_stonks/writeup3.PNG)
 
 Of course, that didn't stop FIREPONY57#0483 from enjoying his wealth.
 
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/omega_stonks/writeups43.PNG?raw=true)
-![](https://github.com/matdaneth/uiuctf-writeups/blob/master/Images/omega_stonks/writeups42.PNG?raw=true)
+![](Images/omega_stonks/writeups43.PNG)
+![](Images/omega_stonks/writeups42.PNG)
 
 From then on, FIREPONY57#0483’s balance kept on growing, and after some experimentation, he found out that he could transfer any amount of money to other people under 100999 bells. Only 5 of these transfers were needed to buy the flag. 
 
