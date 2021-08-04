@@ -7,7 +7,7 @@
 
 `Pwn Warmup` was a pwn (binary exploitation) challenge in UIUCTF 2021, where I played with `TeamlessCTF`, placing 12th place overall. Although my team solved this challenge before I got a chance to during the CTF, I wanted to make a writeup for it anyways.
 
-We first decompile the `main` function in Ghidra:
+We first decompile the `main` function in Ghidra (Ghidra is a C decompiler developed by the NSA, and can be found at https://ghidra-sre.org/):
 
 ```C
 void main(void)
