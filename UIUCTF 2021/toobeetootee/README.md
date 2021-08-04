@@ -80,6 +80,9 @@ for n in range(len(lines)//3):
 At first, I plotted the coordinates in 3D, because I had all three dimensions. However, I found that this was unneccesary because all the blocks of the flag are arranged in a plane perpendicular to the ground, as the fake flag is. So, I used matplotlib to plot the flag in 2D, allowing for some margin of error in case the flag was shifted when the fake one was created.
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
 fig = plt.figure()
 ax = plt.axes()
 
