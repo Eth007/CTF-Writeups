@@ -9,13 +9,15 @@ This challenge hints at the flag being hidden on YouTube, so we can assume we ar
 
 In the previous challenge, we found Charlie's [twitter](https://twitter.com/ChaplinCoding), and we see a "YouTube" link on his twitter profile.
 
-
+![Youtube link on @ChaplinCoding's profile](link.png)
 
 When we click on the YouTube link, thankfully it is not a rickroll. Instead it brings us to a YouTube video on the `Charlie Chaplin Coding` YouTube channel.
 
-
+![Video on Charlie Chaplin Coding's channel](video.png)
 
 If we take our time to watch through the video, we see it an advertisement for the first IBM personal computers starring Charlie Chaplin. Near the end if we don't click off the video, we see the flag.
+
+![Flag](flag.png)
 
 Flag: `uiuctf{ch@plin_oN_th3_tV!!}`
 
