@@ -40,7 +40,7 @@ While playing with the bot, we were able to find a denial of service vulnerabili
 
 ![Breaking the bot](breakbot.png)
 
-Upon finding the exploit, and testing it for about an hour, we contacted Admins and discovered the what was most likely the problem. Whenever a user bought an item, it went into a for loop that executed a SQL commands which added one of the item you bought into your table. When trying to do this 50k times, It would stop the bot from responding to anyone for a period of time.
+Upon finding the exploit, and testing it for about an hour, we contacted admins and discovered what was most likely the problem. Whenever a user bought an item, it went into a for loop that executed a SQL commands which added one of the item you bought into your table. When trying to do this 50k times, It would stop the bot from responding to anyone for a period of time because it was too busy running SQL commands.
 
 After then selling the items for a profit, then buying a large amount of items again, we could stop the bot for longer and longer periods of time. Admins told us to stop using the exploit and to let other people still have a chance at solving the challenge.
 
