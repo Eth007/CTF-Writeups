@@ -5,7 +5,7 @@
 
 `buy_buy_buy` was a miscellaneous challenge in UIUCTF 2021 that involved using a Discord bot called `The Auction House#3393` to get the flag. 
 
-The flag to the challenge could be obtained by buying the `Flag Common`, `Flag Rare`, and `Flag Ultra Rare` items from the market. 
+The flag to the challenge could be obtained by buying the `Flag Common`, `Flag Rare`, and `Flag Ultra Rare` items from the market then running the command `/redeem_flags` to have the bot DM you the flag. 
 
 There were two main ways to obtain enough money to buy the flag. We'll go over them, and then a vulnerability we found in the bot itself (unrelated to the challenge).
 
