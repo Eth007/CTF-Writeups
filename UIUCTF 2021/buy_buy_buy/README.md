@@ -23,7 +23,11 @@ With last year's bot, there was a transfer command that allowed you to give mone
 ### Strategy 2: Buying/Selling Clout
 What's clout? Well, according to Google, clout is "a heavy blow with the hand or a hard object," or "influence or power, especially in politics or business." Let's go with the second definition.
 
-There were certain items in the market that could be bought and sold for a profit, which allowed you to increase your balance. One of these items was `clout`. You could continue buying and selling large amounts of clout to exponentially increase your balance, but due to a flaw in the bot, buying selling large amounts of clout would not succeed (more on that later :eyes:).
+There were certain items in the market that could be bought and sold for a profit, which allowed you to increase your balance. One of these items was `clout`. 
+
+![a](a)
+
+You could continue buying and selling large amounts of clout to exponentially increase your balance, but due to a flaw in the bot, buying selling large amounts of clout would not succeed (more on that later :eyes:).
 
 ![Buying and selling clout](buy&sell.png)
 
