@@ -46,6 +46,8 @@ After then selling the items for a profit, then buying a large amount of items a
 
 This exploit could have been used to prevent people from solving the challenge and keep the challenge point value higher. So this exploit could have been used to gain a competitive advantage due to dynamic scoring.
 
+![Flag](flag.png)
+
 Flag: `uiuctf{at_the_bang_of_the_gavel_only_one_can_win}`
 
 Thanks to Pranav for yet again making a (vulnerable) discord bot challenge! :wink:
