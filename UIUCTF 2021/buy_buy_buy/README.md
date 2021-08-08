@@ -32,6 +32,8 @@ If you bought and sold manageable amounts of clout for around an hour, it was po
 ### Bonus: The Exploit
 While playing with the bot, we were able to find a denial of service vulnerability allowing us to disallow other users from using the bot for an extended period of time. This exploit was found when using Strategy 2 to become super rich. Apparently, when buying large an amount of an item, you can stop the bot from working for a period of time. 
 
+![Breaking the bot](breakbot.png)
+
 Upon finding the exploit, and testing it for about an hour, we contacted Admins and discovered the what was most likely the problem. Whenever a user bought an item, it went into a for loop that executed a SQL commands which added one of the item you bought into your table. When trying to do this 50k times, It would stop the bot from responding to anyone for a period of time.
 
 After then selling the items for a profit, then buying a large amount of items again, we could stop the bot for longer and longer periods of time. Admins told us to stop using the exploit and to let other people still have a chance at solving the challenge.
