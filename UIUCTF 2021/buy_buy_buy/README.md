@@ -16,7 +16,7 @@ There was a cool feature that allowed you to collect money from bidding on items
 
 You could exploit this feature by bidding on multiple items that you have just enough money for, then when items are distributed, you would have a negative balance. Then you could sell the items and gain a large profit.
 
-![Negative Balance](negativeBalance.png)
+![Negative balance](negativeBalance.png)
 
 With last year's bot, there was a transfer command that allowed you to give money to your teammates to purchase the flag quicker, but this year there did not seem to be a way to directly give somebody else money. But there is a commands that lets you create a private auction house where other users can sell items if they are invited. This can be used to sell items to teammates at the minimum 30% of the price, essentially giving money to another player.
 
@@ -24,6 +24,8 @@ With last year's bot, there was a transfer command that allowed you to give mone
 What's clout? Well, according to Google, clout is "a heavy blow with the hand or a hard object," or "influence or power, especially in politics or business." Let's go with the second definition.
 
 There were certain items in the market that could be bought and sold for a profit, which allowed you to increase your balance. One of these items was `clout`. You could continue buying and selling large amounts of clout to exponentially increase your balance, but due to a flaw in the bot, buying selling large amounts of clout would not succeed (more on that later :eyes:).
+
+![Buying and selling clout](buy&sell.png)
 
 If you bought and sold manageable amounts of clout for around an hour, it was possible to buy all three `Flag` items in the shop and get the flag to the challenge. This is the fastest way to obtain the flag.
 
