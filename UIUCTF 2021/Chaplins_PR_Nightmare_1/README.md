@@ -6,7 +6,7 @@
 
 >Hint: If you are struggling to find his Twitter account, check out the #chal-updates channel in our [Discord](https://discord.gg/uiuctf)
 
-Hint message:
+![Hint](hint.png)
 
 In this challenge we are tasked with the challenge of finding Charlie Chaplin's Twitter for software development and coding. Through a quick Google search, we find that there are many Charlie Chaplin Twitters. But the challenge hints that the Twitter we are looking for will have something to do with software development and coding.
 
@@ -14,10 +14,15 @@ The hint on discord tells us, "_I have a friend named charlie chaplin who does c
 
 Some combinations we can try are, "Charlie Chaplin Software", "Charlie Chaplin Coding", and "Charlie Chaplin Development".  When searching up "Charlie Chaplin Coding", and "Charlie Chaplin Development", we find an account called `Charlie Chaplin Development` with the at `@ChaplinCoding`.
 
+![@ChaplinCoding's Twitter](twitteraccount.png)
+
 We start to investigate his tweets but we don't find anything out of the ordinary. During the competition, at around 1 hour after uiuctf started, `Charlie Chaplin Development` tweeted:
 
-[tweet pic here]
+![@ChaplinCoding's Tweet](tweet.png)
 
 We know twitter has a lists page for each user, so we go to where `@ChaplinCoding`'s lists are located: https://twitter.com/ChaplinCoding/lists. There we see the flag in on of his lists.
+
+![@ChaplinCoding's lists](lists.png)
+![Flag](flag.png)
 
 Flag: `uiuctf{pe@k_c0medy!}`
