@@ -12,6 +12,8 @@ There were two main ways to obtain enough money to buy the flag. We'll go over t
 ### Strategy 1: Bidding in the Auction House 
 Every 10 minutes, the bot would generate an "auction house" in which you could bid for items that you could sell for a profit if you won the bid. The author of this challenge intended for people to be fighting over bids in the auction house, but since we were one of the first teams to attempt this challenge, we were able to outbid everyone and first blood the challenge.
 
+![Auction house](auctionhouse.png)
+
 There was a cool feature that allowed you to collect money from bidding on items even more quickly. The code for the Discord bot checks if you have enough money to bid on an item, but does not deduct that amount from your balance until the items as distributed at the end of the 10 minutes. 
 
 You could exploit this feature by bidding on multiple items that you have just enough money for, then when items are distributed, you would have a negative balance. Then you could sell the items and gain a large profit.
