@@ -25,7 +25,7 @@ What's clout? Well, according to Google, clout is "a heavy blow with the hand or
 
 There were certain items in the market that could be bought and sold for a profit, which allowed you to increase your balance. One of these items was `clout`. 
 
-![a](a)
+![Buying clout](clout.png)
 
 You could continue buying and selling large amounts of clout to exponentially increase your balance, but due to a flaw in the bot, buying selling large amounts of clout would not succeed (more on that later :eyes:).
 
