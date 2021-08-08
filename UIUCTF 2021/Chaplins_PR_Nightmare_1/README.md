@@ -8,7 +8,7 @@
 
 Hint message:
 
-In this challenge we are tasked with the challenge of finding Charlie Chaplin's Twitter for software development and coding. Through a Google search, we find that there are many Charlie Chaplin Twitters. But the challenge hints that the Twitter we are looking for will have something to do with software development and coding.
+In this challenge we are tasked with the challenge of finding Charlie Chaplin's Twitter for software development and coding. Through a quick Google search, we find that there are many Charlie Chaplin Twitters. But the challenge hints that the Twitter we are looking for will have something to do with software development and coding.
 
 The hint on discord tells us, "_I have a friend named charlie chaplin who does coding or development now! He is on twitter and I forget the at is, its some combo of those words i think though._" We can use the hint to get some idea of what to search up on twitter to get the account by searching up a combo of the words they give us. 
 
