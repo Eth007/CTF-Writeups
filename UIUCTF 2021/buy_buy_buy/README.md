@@ -1,9 +1,9 @@
 
-# buy buy buy
+# buy_buy_buy
 
 > I got a lot of items to sell so buy buy buy.
 
-`buy buy buy` was a miscellaneous challenge in UIUCTF 2021 that involved using a Discord bot called `The Auction House#3393` to get the flag. 
+`buy_buy_buy` was a miscellaneous challenge in UIUCTF 2021 that involved using a Discord bot called `The Auction House#3393` to get the flag. 
 
 The flag to the challenge could be obtained by buying the `Flag Common`, `Flag Rare`, and `Flag Ultra Rare` items from the market. 
 
