@@ -16,7 +16,7 @@ There was a cool feature that allowed you to collect money from bidding on items
 
 You could exploit this feature by bidding on multiple items that you have just enough money for, then when items are distributed, you would have a negative balance. Then you could sell the items and gain a large profit.
 
-[picture here]
+![(negativeBalance.png)]
 
 With last year's bot, there was a transfer command that allowed you to give money to your teammates to purchase the flag quicker, but this year there did not seem to be a way to directly give somebody else money. But there is a commands that lets you create a private auction house where other users can sell items if they are invited. This can be used to sell items to teammates at the minimum 30% of the price, essentially giving money to another player.
 
