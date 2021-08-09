@@ -11,7 +11,7 @@ Imgur is a site used to share images and gif's. Charlie has posted a lot of pict
 
 The images on his twitter lead to nothing, but on his [website](https://www.charliechaplin.dev/home), in the "About Us" tab, we find a picture that is connected to a link
 
-Sure enough, it leads us to a picture posted by Charlie's Imgur account, `[  
+Sure enough, it leads us to a picture posted by Charlie's Imgur account, [  
 ChaplinDevelopment](https://imgur.com/user/ChaplinDevelopment). 
 
 If we go to his user page, and look at his comments, we can find the flag.
