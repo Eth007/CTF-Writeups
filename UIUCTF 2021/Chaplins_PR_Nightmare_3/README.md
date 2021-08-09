@@ -7,7 +7,7 @@
 
 Note: Reading all [previous writeups](https://github.com/Eth007/CTF-Writeups/tree/master/UIUCTF%202021) for this OSINT series will help make this writeup less confusing. :)
 
-The challenge description tells us to go find Charlie's website. YouTube usually has a section in their channel about that may contain some extra information about the user. 
+The challenge description tells us to go find Charlie's website. YouTube usually has an about section in their channel about that may contain some extra information about the user. 
 
 We found his [YouTube](https://www.youtube.com/channel/UCxPyHVMa8TyKrOj05x86osA/featured) channel in the last OSINT challenge, and if we go to the about page, sure enough, there is a link to his website.
 
