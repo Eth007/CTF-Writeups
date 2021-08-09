@@ -1,4 +1,4 @@
-# Chaplin's PR Nightmare 7 - 50 pts, 127 solves
+# Chaplin's PR Nightmare 7 - 50 pts, 165solves
 >Chaplin left some code up on GitHub which may be the actual PR nightmare I hope not though... Leaked code is bad. Find it!!!
 
 >The inner content of this flag begins with **"th"**
