@@ -7,7 +7,7 @@ Note: Reading all [previous writeups](https://github.com/Eth007/CTF-Writeups/tre
 
 In this OSINT challenge, we have to look for another flag on Charlie Chaplin's C3D website. The challenge also hints on the fact that we have to try to "reach out" to him.
 
-Conveniently, there is a tab on the website that is labeled "Contact".
+We have already found his [website](https://www.charliechaplin.dev/contact) in the previous OSINT challenges in this series. Conveniently, there is a tab on the website that is labeled "Contact".
 
 On the contact page, we get a google form that we can fill out to "contact" Charlie Chaplin.
 
