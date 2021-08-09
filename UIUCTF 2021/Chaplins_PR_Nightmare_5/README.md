@@ -13,8 +13,7 @@ The images on his twitter lead to nothing, but on his [website](https://www.char
 
 ![Image that links to Imgur account](image.png)
 
-Sure enough, it leads us to a picture posted by Charlie's Imgur account, [  
-ChaplinDevelopment](https://imgur.com/user/ChaplinDevelopment). 
+Sure enough, it leads us to a picture posted by Charlie's Imgur account, [ChaplinDevelopment](https://imgur.com/user/ChaplinDevelopment). 
 
 ![ChaplinDevelopment's profile page](profile.png)
 
