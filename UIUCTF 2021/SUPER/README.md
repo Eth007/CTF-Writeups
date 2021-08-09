@@ -41,7 +41,7 @@ We find that there's an IRC log in `/LOG1.IRC`:
 [13:48] <SUPERHOT> SUPERHOT SUPERHOT SUPERHOT 
 [SU:PE] <RHOT> SUPERHOT SUPERHOT SU PERHOT SUPERHOT SUPER HOT
 ```
-A pretty weird conversation, ngl. In Autopsy we can also see a deleted file at ``.
+A pretty weird conversation, ngl. In Autopsy we can also see a deleted file at `SUPER/HOT/SUPER/HOT/SUPER/HOT/SUPER/HOT/SUPER/HOT/_UPERHOT.exe`.
 
 We can run `file` on this:
 
