@@ -8,11 +8,19 @@ Note: Admins of ctf's put a lot of work into their ctf's, so consider filling ou
 
 Looking at the google form, we can try to just submit the form without filling anything in, but the form requires us to fill out most of the form.
 
+![Required inputs](form.png)
+
 But we discovered a neat little trick that we can use to bypass all of this. If we just inspect the google form, and `ctrl+f` for `uiuctf{` in the html, we find the flag.
+
+![Finding the flag in the html](htmlflag.png)
 
 But the problem is that this particular flag, it has an emoji. The end of the flag is an emoji that is unicoded encoded. So we can decode it by using a python shell. If we wrap the flag with the encoded emoji with quotes, we can decode the unicoded emoji at the end.
 
+![Flag](flag1.png)
+
 We can shorten this process by using one simple shell command to automatically do all of this for us: `echo -e $(curl https://forms.gle/pzwBXxdmRob885wG7 -L 2>/dev/null | grep 'uiuctf{.*}' -o)`
+
+![Flag](flag2.png)
 
 This method will mostly also work with other ctf's feedback surveys by changing the url to the google form.
 
