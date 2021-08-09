@@ -9,11 +9,19 @@ We now need to find the actual PR nightmare which is on Charlie's GitHub. We can
 
 If we look at the users that have "charliechaplin" in their username, we find `charliechaplindev`.
 
+![Search results for charliechaplin on GitHub](search.png)
+
+![Charlie's GitHub](profile.png)
+
 He has a few repositories, but there are no flags in it. But we can look at his activity to see what else he has been doing.
 
 While scrolling through his activity we see a strange issue Charlie has opened in one of his repositories.
 
+![Suspicious issue](sus.png)
+
 Clicking on this issue, we find the flag.
+
+![Flag](flag.png)
 
 Flag: `uiuctf{th3_TrUe_pR_N1gHtm@r3}`
 
