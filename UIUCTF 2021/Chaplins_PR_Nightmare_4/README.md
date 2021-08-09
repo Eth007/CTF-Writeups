@@ -2,7 +2,7 @@
 >Charlie left another flag on his company's website. Maybe you have to reach out to him???
 
 >The inner content of this flag begins with **"w3"**
->
+
 Note: Reading all [previous writeups](https://github.com/Eth007/CTF-Writeups/tree/master/UIUCTF%202021) for this OSINT series will help make this writeup less confusing. :)
 
 In this OSINT challenge, we have to look for another flag on Charlie Chaplin's C3D website. The challenge also hints on the fact that we have to try to "reach out" to him.
