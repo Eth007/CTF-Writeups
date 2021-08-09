@@ -6,7 +6,7 @@ This challenge is a feedback survey that the ctf admins want us to fill out so t
 
 Note: Admins of ctf's put a lot of work into their ctf's, so consider filling out the form even if you get the flag with this method. This method is ideally used to first blood the challenge, then fill out the survey carefully after.
 
-Looking at the google form, we can try to just submit the form without filling anything in, but the form requires us to fill out most, if not all, of the form.
+Looking at the google form, we can try to just submit the form without filling anything in, but the form requires us to fill out most of the form.
 
 But we discovered a neat little trick that we can use to bypass all of this. If we just inspect the google form, and `ctrl+f` for `uiuctf{` in the html, we find the flag.
 
