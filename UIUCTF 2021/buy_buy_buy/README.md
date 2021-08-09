@@ -42,6 +42,8 @@ While playing with the bot, we were able to find a denial of service vulnerabili
 
 Upon finding the exploit, and testing it for about an hour, we contacted admins and discovered what was most likely the problem. Whenever a user bought an item, it went into a for loop that executed a SQL commands which added one of the item you bought into your table. When trying to do this 50k times, It would stop the bot from responding to anyone for a period of time because it was too busy running SQL commands.
 
+![Exploited code](code.png)
+
 After then selling the items for a profit, then buying a large amount of items again, we could stop the bot for longer and longer periods of time. Admins told us to stop using the exploit and to let other people still have a chance at solving the challenge.
 
 This exploit could have been used to prevent people from solving the challenge and keep the challenge point value higher. So this exploit could have been used to gain a competitive advantage due to dynamic scoring.
