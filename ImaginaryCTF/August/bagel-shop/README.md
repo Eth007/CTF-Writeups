@@ -23,4 +23,6 @@
 
 ## Solution
 
-Leak libc by getting an unsorted bin chunk with overwriting `tcache_perthread_struct` with tcache poisoning, then tcache poisoning again to overwrite `__free_hook` with `system` and `free("/bin/sh")`
+Leak heap with double free, then leak libc by getting an unsorted bin chunk with overwriting `tcache_perthread_struct` with tcache poisoning, then tcache poisoning again to overwrite `__free_hook` with `system` and `free("/bin/sh")`
+
+Alternate (possibly easier) solution was to leak heap, then tcache poison to get `malloc` to return a heap address that had a libc address in it (I heard that a pointer to `stderr` was lying around on the heap) then proceed as above.
