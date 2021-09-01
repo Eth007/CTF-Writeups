@@ -9,7 +9,8 @@
 
 ## Distribution 
 (https://imaginaryctf.org/r/C6AA-bagel-shop.zip)
-- `heaps_of_fun`
+
+- `vuln`
 - `libc-2.27.so`
 - `ld-2.27.so`
 - `Makefile`
