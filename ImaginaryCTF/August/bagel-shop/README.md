@@ -1,23 +1,26 @@
-# heaps-of-fun
+# bagel-shop
 **Category:** Pwn
-**Difficulty:** Hard
+**Difficulty:** Medium/Hard
 **Author:** Eth007
 
 ## Description
 
-Time for some generic heap!
+"I love using the pwn to pwn the pwn" - Max49, 2021
 
-## Distribution
-
+## Distribution 
+(https://imaginaryctf.org/r/C6AA-bagel-shop.zip)
 - `heaps_of_fun`
 - `libc-2.27.so`
 - `ld-2.27.so`
 - `Makefile`
+- `Dockerfile`
+- `docker-compose.yml`
+- `nc puzzler7.imaginaryctf.org 31337` (might not work anymore)
 
 ## Deploy notes
 
-- Run with `flag.txt`, libc, ld
+- Run with `flag.txt`, libc and ld are patchelf'ed
 
 ## Solution
 
-Get a leak from a fastbin, then tcache poison to overwrite `__free_hook` with `system()`, write `/bin/sh` into a chunk, and free the chunk to get a shell.
+Leak libc by getting an unsorted bin chunk with overwriting `tcache_perthread_struct` with tcache poisoning, then tcache poisoning again to overwrite `__free_hook` with `system` and `free("/bin/sh")`
