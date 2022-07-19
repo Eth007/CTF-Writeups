@@ -3,7 +3,7 @@
 > Author:  [Research Innovations, Inc. (RII)](https://www.researchinnovations.com/)
 > -   [gibson_s390x.tar](https://github.com/tj-oconnor/cyber-open-2022/blob/main/pwn/gibson/files/gibson_s390x.tar)
 
-Gibson was a binary exploitation challenge in the US Cyber Open CTF in 2022, which is the first step toward qualification for the US Cyber Team. At the end of the CTF, it was worth 1000 points and had 10 solves. I was the fourth solve on this challenge (could have been second if CTFd wasn't glitching<sup id="a1">[1](#f1)</sup> 😔).
+Gibson was a binary exploitation challenge in the US Cyber Open CTF in 2022, which is the first step toward qualification for the US Cyber Team. At the end of the CTF, it was worth 1000 points and had 10 solves. I was the fourth solve on this challenge (could have been second if CTFd wasn't glitching<sup id="a1">[[1]](#f1)</sup> 😔).
 
 Anyways, let's get to the challenge!
 
@@ -175,7 +175,7 @@ The `mainframe` binary in of itself does not have a win function or anything tha
 - We must make sure to XOR it with `R` when we are finished. 
 - Because this is big-endian, the first two bytes are null. So, if we want to leak with `%s`, we must offset our address by 2 to get the non-null bytes.
 
-I used this python snippet with pwntools to generate the format string payload:[^2]
+I used this python snippet with pwntools to generate the format string payload<sup id="a2">[[2]](#f2):
 
 ```python
 xor(b"%6$s\0\0\0\0" + p64(elf.got.puts+2), b"R")
@@ -218,7 +218,7 @@ $ s390x-linux-gnu-objdump -d libc.so.6  | grep -B 3 -A 3 'd9c00'
 
 Jumping to `libc base + 0xda688` will load the contents of `r13` into `r2` (where the first argument of the syscall is called), then call `execve()`, which will call the `execve` syscall!
 
-Because we control `r13`, we can put the address of `/bin/sh` (which is present in libc because of the `system` function) into the first argument passed to `excecve`, hope that `r3` and `r4` are 0, and spawn a shell![^3]
+Because we control `r13`, we can put the address of `/bin/sh` (which is present in libc because of the `system` function) into the first argument passed to `excecve`, hope that `r3` and `r4` are 0, and spawn a shell!<sup id="a3">[[3]](#f3)
 
 That gives us our final exploit path:
 - Leak libc address by using the format string to read from the GOT
@@ -261,9 +261,13 @@ conn.send(payload)
 conn.interactive()
 ```
 
-This gets us a shell, and we can run `cat flag` to get the flag[^4]: `USCG{RIIdiculouslyAwesome_5d4b48559f6ee937b9cbfc809bafad62}`
+This gets us a shell, and we can run `cat flag` to get the flag<sup id="a4">[[4]](#f4): `USCG{RIIdiculouslyAwesome_5d4b48559f6ee937b9cbfc809bafad62}`
+
 
 <b id="f1">1</b> The organizers were not able to host the challenge as something that players could connect to, so instead we had to submit solve scripts through a (glitchy) submission box on CTFd. I believe that my submission didn't go through the first time I solved it.😭[↩](#a1)
-[^2] Originally, I used `%p` to leak the libc address, but this was different on the debug and testing environments, probably because the stack was shifted around as a result of the different environments. A more reliable way was to use the GOT to leak, which is what I did in this writeup.
-[^3] After some discussion with others, it seems that some people were able to utilize the `system` function, or find a gadget to arbitrarily set `r2`. But I like this method because it's the first thing that I found in libc. 🙂
-[^4] This was actually DMed to us afterwards, as the organizers ran the solve scripts against their own infrastructure rather than having players to run them.
+
+<b id="f2">2</b> Originally, I used `%p` to leak the libc address, but this was different on the debug and testing environments, probably because the stack was shifted around as a result of the different environments. A more reliable way was to use the GOT to leak, which is what I did in this writeup. [↩](#a2)
+
+<b id="f3">3</b> After some discussion with others, it seems that some people were able to utilize the `system` function, or find a gadget to arbitrarily set `r2`. But I like this method because it's the first thing that I found in libc. 🙂[↩](#a3)
+
+<b id="f4">4</b> This was actually DMed to us afterwards, as the organizers ran the solve scripts against their own infrastructure rather than having players to run them. [↩](#a4)
