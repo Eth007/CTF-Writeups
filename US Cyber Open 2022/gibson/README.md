@@ -264,10 +264,10 @@ conn.interactive()
 This gets us a shell, and we can run `cat flag` to get the flag<sup id="a4">[[4]](#f4): `USCG{RIIdiculouslyAwesome_5d4b48559f6ee937b9cbfc809bafad62}`
 
 
-<b id="f1">[[1]]</b> The organizers were not able to host the challenge as something that players could connect to, so instead we had to submit solve scripts through a (glitchy) submission box on CTFd. I believe that my submission didn't go through the first time I solved it.😭[↩](#a1)
+<b id="f1">[1]</b> The organizers were not able to host the challenge as something that players could connect to, so instead we had to submit solve scripts through a (glitchy) submission box on CTFd. I believe that my submission didn't go through the first time I solved it.😭[↩](#a1)
 
-<b id="f2">[[2]]</b> Originally, I used `%p` to leak the libc address, but this was different on the debug and testing environments, probably because the stack was shifted around as a result of the different environments. A more reliable way was to use the GOT to leak, which is what I did in this writeup. [↩](#a2)
+<b id="f2">[2]</b> Originally, I used `%p` to leak the libc address, but this was different on the debug and testing environments, probably because the stack was shifted around as a result of the different environments. A more reliable way was to use the GOT to leak, which is what I did in this writeup. [↩](#a2)
 
-<b id="f3">[[3]]</b> After some discussion with others, it seems that some people were able to utilize the `system` function, or find a gadget to arbitrarily set `r2`. But I like this method because it's the first thing that I found in libc. 🙂[↩](#a3)
+<b id="f3">[3]</b> After some discussion with others, it seems that some people were able to utilize the `system` function, or find a gadget to arbitrarily set `r2`. But I like this method because it's the first thing that I found in libc. 🙂[↩](#a3)
 
-<b id="f4">[[4]]</b> This was actually DMed to us afterwards, as the organizers ran the solve scripts against their own infrastructure rather than having players to run them. [↩](#a4)
+<b id="f4">[4]</b> This was actually DMed to us afterwards, as the organizers ran the solve scripts against their own infrastructure rather than having players to run them. [↩](#a4)
