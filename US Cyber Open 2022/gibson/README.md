@@ -263,6 +263,7 @@ conn.interactive()
 
 This gets us a shell, and we can run `cat flag` to get the flag<sup id="a4">[[4]](#f4): `USCG{RIIdiculouslyAwesome_5d4b48559f6ee937b9cbfc809bafad62}`
 
+---
 
 <b id="f1">[1]</b> The organizers were not able to host the challenge as something that players could connect to, so instead we had to submit solve scripts through a (glitchy) submission box on CTFd. I believe that my submission didn't go through the first time I solved it.😭[↩](#a1)
 
