@@ -3,7 +3,7 @@
 > Author:  [Research Innovations, Inc. (RII)](https://www.researchinnovations.com/)
 > -   [gibson_s390x.tar](https://github.com/tj-oconnor/cyber-open-2022/blob/main/pwn/gibson/files/gibson_s390x.tar)
 
-Gibson was a binary exploitation challenge in the US Cyber Open CTF in 2022, which is the first step toward qualification for the US Cyber Team. At the end of the CTF, it was worth 1000 points and had 10 solves. I was the fourth solve on this challenge (could have been second if CTFd wasn't glitching[^1] 😔).
+Gibson was a binary exploitation challenge in the US Cyber Open CTF in 2022, which is the first step toward qualification for the US Cyber Team. At the end of the CTF, it was worth 1000 points and had 10 solves. I was the fourth solve on this challenge (could have been second if CTFd wasn't glitching<sup id="a1">[1](#f1)</sup> 😔).
 
 Anyways, let's get to the challenge!
 
@@ -263,7 +263,7 @@ conn.interactive()
 
 This gets us a shell, and we can run `cat flag` to get the flag[^4]: `USCG{RIIdiculouslyAwesome_5d4b48559f6ee937b9cbfc809bafad62}`
 
-[^1] The organizers were not able to host the challenge as something that players could connect to, so instead we had to submit solve scripts through a (glitchy) submission box on CTFd. I believe that my submission didn't go through the first time I solved it.😭
+<b id="f1">1</b> The organizers were not able to host the challenge as something that players could connect to, so instead we had to submit solve scripts through a (glitchy) submission box on CTFd. I believe that my submission didn't go through the first time I solved it.😭[↩](#a1)
 [^2] Originally, I used `%p` to leak the libc address, but this was different on the debug and testing environments, probably because the stack was shifted around as a result of the different environments. A more reliable way was to use the GOT to leak, which is what I did in this writeup.
 [^3] After some discussion with others, it seems that some people were able to utilize the `system` function, or find a gadget to arbitrarily set `r2`. But I like this method because it's the first thing that I found in libc. 🙂
 [^4] This was actually DMed to us afterwards, as the organizers ran the solve scripts against their own infrastructure rather than having players to run them.
