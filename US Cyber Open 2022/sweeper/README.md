@@ -2,7 +2,7 @@
 
 > A twist on a classic game. Tread lightly while you dig up the flag.
 >
-> https://sweeper-w7vmh474ha-uc.a.run.app/](https://sweeper-w7vmh474ha-uc.a.run.app/)
+> https://sweeper-w7vmh474ha-uc.a.run.app/
 > 
 > Author:  [Tsuto](https://github.com/jselliott)
 
